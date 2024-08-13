@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* BASE */
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+/* index.html */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 100px 0 100px 0;
+}
+
+.link {
+  display: block;
+  border-radius: 8px;
+  background-color: #0b76a3;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.back {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #0b76a3;
+  color: #f6f6fe;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.back:hover {
+  opacity: 0.8;
+}
+
+/* TASK 1 */
+
+#categories {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item {
+  max-width: 392px;
+  margin-bottom: 24px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 0 8px 16px;
+}
+
+/* TASK 2 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
+  row-gap: 24px;
+  column-gap: 24px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* TASK 3 */
+
+.input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin: 24px 24px 16px;
+  padding: 8px 16px;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: 24px;
+}
+/* TASK-4 */
+.login-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
+.input-form {
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+}
+
+.input:hover {
+  border: 1px solid #000000;
+}
+
+.input:active {
+  border: 1px solid #808080;
+}
+
+.btn-submit {
+  width: 86px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+/* TASK-5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #2e2f42;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
+.change-color {
+  width: 148px;
+  height: 40px;
+}
+
+#controls {
+  display: flex;
+  width: 486px;
+  height: 104px;
+  gap: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
+#controls > input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#controls button {
+  width: 120px;
+}
+
+.btn-destroy {
+  background-color: #ff4e4e;
+}
+
+.btn-destroy:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  padding: 30px;
+  width: 486px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
